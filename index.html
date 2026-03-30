@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anupam Satheesh | Portfolio</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        background: #0f172a;
+        color: #e2e8f0;
+        line-height: 1.6;
+    }
+
+    a {
+        color: #38bdf8;
+        text-decoration: none;
+    }
+
+    header {
+        padding: 20px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #020617;
+        position: sticky;
+        top: 0;
+    }
+
+    header h1 {
+        color: #38bdf8;
+    }
+
+    nav a {
+        margin-left: 20px;
+        font-weight: 500;
+    }
+
+    section {
+        padding: 60px 10%;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 90vh;
+    }
+
+    .hero h2 {
+        font-size: 48px;
+        color: #38bdf8;
+    }
+
+    .hero p {
+        margin-top: 15px;
+        max-width: 600px;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #38bdf8;
+        color: #020617;
+        border-radius: 6px;
+        font-weight: bold;
+    }
+
+    .card {
+        background: #1e293b;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    h2.section-title {
+        margin-bottom: 20px;
+        color: #38bdf8;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #020617;
+        margin-top: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Anupam</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Associate Software Engineer</h2>
+    <p>
+        Building scalable systems, solving real-world problems, and continuously evolving as a developer.
+    </p>
+    <a href="#contact" class="btn">Contact Me</a>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+        <p>
+            I am an Associate Software Engineer with experience in full-stack development and enterprise applications.
+            Currently working on a multi-tenant CRM system, focusing on backend development, API integration,
+            and performance optimization.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="grid">
+        <div class="card">Java</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Python</div>
+        <div class="card">MySQL</div>
+        <div class="card">Django</div>
+        <div class="card">Angular</div>
+        <div class="card">Micronaut</div>
+        <div class="card">HTML & CSS</div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="card">
+        <h3>Associate Software Engineer</h3>
+        <p>Expeed Software Pvt Ltd (2025 - Present)</p>
+        <p>
+            Working on CRM system development including modules like Leads, Contacts, Tasks.
+            Developed APIs using Micronaut and improved system performance.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Python Full Stack Trainee</h3>
+        <p>Quest Innovative Solutions (2024 - 2025)</p>
+        <p>
+            Built full-stack applications using Django and frontend technologies.
+        </p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>SellAny</h3>
+            <p>E-commerce platform for buying and selling products.</p>
+        </div>
+
+        <div class="card">
+            <h3>Student Management System</h3>
+            <p>CRUD-based school management system.</p>
+        </div>
+
+        <div class="card">
+            <h3>Complaint System</h3>
+            <p>Track and manage customer complaints.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="card">
+        <p>Email: anupams9497@gmail.com</p>
+        <p>Phone: +91 9061506020</p>
+        <p>Location: Kerala, India</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Anupam Satheesh | Portfolio</p>
+</footer>
+
+</body>
+</html>
