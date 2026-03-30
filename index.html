@@ -8,167 +8,116 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+    background: linear-gradient(135deg,#0f172a,#020617);
+    color:#e2e8f0;
 }
 
-body {
-    background: linear-gradient(135deg, #0f172a, #020617);
-    color: #e2e8f0;
+/* NAV */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter:blur(10px);
 }
 
-/* NAVBAR */
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 8%;
-    position: sticky;
-    top: 0;
-    backdrop-filter: blur(10px);
-    background: rgba(15, 23, 42, 0.6);
-}
-
-nav h1 {
-    color: #38bdf8;
-}
-
-nav a {
-    margin-left: 20px;
-    color: #e2e8f0;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #38bdf8;
-}
+nav h1{color:#38bdf8;}
+nav a{margin-left:20px;color:white;}
+nav a:hover{color:#38bdf8;}
 
 /* HERO */
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 8%;
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:0 8%;
 }
-
-.hero h2 {
-    font-size: 55px;
-    background: linear-gradient(90deg, #38bdf8, #818cf8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.hero h2{
+    font-size:55px;
+    background:linear-gradient(90deg,#38bdf8,#818cf8);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
+.hero p{margin-top:15px;max-width:600px;}
 
-.hero p {
-    margin-top: 15px;
-    max-width: 600px;
-    opacity: 0.8;
-}
-
-.btn {
-    margin-top: 25px;
-    padding: 12px 25px;
-    background: linear-gradient(90deg, #38bdf8, #818cf8);
-    border-radius: 30px;
-    color: white;
-    display: inline-block;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    transform: scale(1.05);
+.btn{
+    margin-top:25px;
+    padding:12px 25px;
+    border-radius:30px;
+    background:linear-gradient(90deg,#38bdf8,#818cf8);
+    display:inline-block;
 }
 
 /* SECTION */
-section {
-    padding: 80px 8%;
-}
+section{padding:80px 8%;}
+.section-title{color:#38bdf8;margin-bottom:30px;font-size:30px;}
 
-.section-title {
-    font-size: 30px;
-    margin-bottom: 30px;
-    color: #38bdf8;
+/* CARD */
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:25px;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+    margin-bottom:20px;
+    transition:0.3s;
 }
-
-/* GLASS CARD */
-.card {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    padding: 25px;
-    backdrop-filter: blur(10px);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
+.card:hover{transform:translateY(-8px);}
 
 /* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
-/* SKILLS */
-.skill {
-    text-align: center;
-    font-weight: 500;
-}
-
-/* EXPERIENCE */
-.timeline {
-    border-left: 2px solid #38bdf8;
-    padding-left: 20px;
-}
-
-.timeline .card {
-    margin-bottom: 20px;
-}
+/* LIST */
+ul{padding-left:20px;}
+li{margin-bottom:8px;}
 
 /* FOOTER */
-footer {
-    text-align: center;
-    padding: 30px;
-    background: #020617;
-    margin-top: 40px;
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
 }
 </style>
 </head>
 
 <body>
 
+<!-- NAV -->
 <nav>
     <h1>Anupam</h1>
     <div>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
     </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-    <h2>Hi, I'm Anupam 👋</h2>
-    <p>
-        Associate Software Engineer specializing in scalable systems,
-        backend development, and real-world problem solving.
-    </p>
-    <a href="#contact" class="btn">Let's Connect</a>
+    <h2>Anupam Satheesh</h2>
+    <p>Associate Software Engineer | Building scalable systems & solving real-world problems</p>
+    <a href="#contact" class="btn">Contact Me</a>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
-    <h2 class="section-title">About Me</h2>
+    <h2 class="section-title">Objective</h2>
     <div class="card">
         <p>
-            I build scalable web applications and enterprise solutions.
-            Currently working on a multi-tenant CRM system, focusing on API development,
-            performance optimization, and system design.
+            Aiming to work in a dynamic environment where I can apply my technical skills to build efficient and scalable systems,
+            solve complex challenges, and grow into a highly competent software engineer.
         </p>
     </div>
 </section>
@@ -176,39 +125,72 @@ footer {
 <!-- SKILLS -->
 <section id="skills">
     <h2 class="section-title">Skills</h2>
+
     <div class="grid">
-        <div class="card skill">Java</div>
-        <div class="card skill">JavaScript</div>
-        <div class="card skill">Python</div>
-        <div class="card skill">MySQL</div>
-        <div class="card skill">Django</div>
-        <div class="card skill">Angular</div>
-        <div class="card skill">Micronaut</div>
-        <div class="card skill">Bootstrap</div>
+        <div class="card">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Python</li>
+                <li>MySQL</li>
+                <li>HTML, CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Bootstrap</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Secondary Skills</h3>
+            <ul>
+                <li>Apptor (Low Code)</li>
+                <li>Django</li>
+                <li>Angular</li>
+                <li>Java</li>
+                <li>MongoDB</li>
+                <li>Micronaut</li>
+                <li>TypeScript</li>
+            </ul>
+        </div>
     </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
     <h2 class="section-title">Experience</h2>
-    <div class="timeline">
 
-        <div class="card">
-            <h3>Associate Software Engineer</h3>
-            <p>Expeed Software Pvt Ltd (2025 - Present)</p>
-            <p>
-                Developed CRM modules, APIs using Micronaut, and improved performance.
-            </p>
-        </div>
+    <div class="card">
+        <h3>Associate Software Engineer</h3>
+        <p>Expeed Software Pvt Ltd | June 2025 - Present</p>
 
-        <div class="card">
-            <h3>Python Full Stack Trainee</h3>
-            <p>Quest Innovative Solutions (2024 - 2025)</p>
-            <p>
-                Built full-stack applications using Django and modern frontend tools.
-            </p>
-        </div>
+        <h4>CRM Project</h4>
+        <p>
+            Multi-tenant system to manage customer relationships, sales pipelines, and team productivity.
+        </p>
 
+        <ul>
+            <li>Developed modules: Leads, Opportunities, Contacts, Accounts, Tasks, Notes</li>
+            <li>Implemented task tracking with priority & status</li>
+            <li>Built APIs using Java Micronaut</li>
+            <li>Performance tuning & bug fixing</li>
+        </ul>
+
+        <p><strong>Tech:</strong> Java, Micronaut, JavaScript, Apptor</p>
+    </div>
+
+    <div class="card">
+        <h3>Python Full Stack Developer Trainee</h3>
+        <p>Quest Innovative Solutions | June 2024 - May 2025</p>
+    </div>
+
+    <div class="card">
+        <h3>Quality Circle Engineer</h3>
+        <p>Nicomatic India Pvt Ltd | 2018 - 2024</p>
+
+        <ul>
+            <li>Document audits</li>
+            <li>Final & incoming inspections</li>
+            <li>Quality assurance processes</li>
+        </ul>
     </div>
 </section>
 
@@ -219,20 +201,78 @@ footer {
     <div class="grid">
 
         <div class="card">
-            <h3>SellAny</h3>
-            <p>E-commerce platform for second-hand products.</p>
+            <h3>SellAny (E-commerce)</h3>
+            <p>
+                Platform to buy/sell second-hand products with user registration.
+            </p>
+            <p><strong>Tech:</strong> Django, SQLite, HTML, CSS, JS</p>
         </div>
 
         <div class="card">
             <h3>Student Management System</h3>
-            <p>Full CRUD-based school management app.</p>
+            <p>
+                School system with student approval and teacher management.
+            </p>
         </div>
 
         <div class="card">
-            <h3>Complaint System</h3>
-            <p>Track and resolve customer complaints efficiently.</p>
+            <h3>Complaint Registration System</h3>
+            <p>
+                Tracks and assigns customer complaints with escalation flow.
+            </p>
         </div>
 
+    </div>
+
+    <div class="card">
+        <h3>Basic Assignments</h3>
+        <ul>
+            <li>Calculator (Tkinter)</li>
+            <li>Facebook UI Clone</li>
+            <li>Form Validation</li>
+            <li>Responsive Web Design</li>
+            <li>Employee Management System</li>
+        </ul>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Diploma in Mechatronics</h3>
+            <p>NTTF (2015-2018) - 67.9%</p>
+        </div>
+
+        <div class="card">
+            <h3>12th (CBSE)</h3>
+            <p>Thunchath Acharya Vidyalayam - 54.2%</p>
+        </div>
+
+        <div class="card">
+            <h3>10th (CBSE)</h3>
+            <p>Sree Narayana Vidya Mandir - 52%</p>
+        </div>
+    </div>
+</section>
+
+<!-- LANGUAGES -->
+<section>
+    <h2 class="section-title">Languages</h2>
+    <div class="card">
+        <p>Malayalam, English, Hindi, Kannada, Tamil</p>
+    </div>
+</section>
+
+<!-- PERSONAL -->
+<section>
+    <h2 class="section-title">Personal Details</h2>
+    <div class="card">
+        <p>DOB: 09-04-1997</p>
+        <p>Marital Status: Single</p>
+        <p>Address: Vrindavan, Near SS Temple Talap, Kannur, Kerala</p>
     </div>
 </section>
 
@@ -242,12 +282,12 @@ footer {
     <div class="card">
         <p>Email: anupams9497@gmail.com</p>
         <p>Phone: +91 9061506020</p>
-        <p>Location: Kerala, India</p>
+        <p>LinkedIn: anuapm-satheesh</p>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 Anupam Satheesh | Designed with ❤️</p>
+    <p>© 2026 Anupam Satheesh</p>
 </footer>
 
 </body>
